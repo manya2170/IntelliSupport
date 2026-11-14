@@ -1,0 +1,22 @@
+[
+    {
+        "category": "Payment Issues",
+        "content": "\n        If a customer has been charged but the order is not confirmed,\n        first ask them to check their order history and payment status.\n        Sometimes payment confirmation takes time.\n        If the amount was deducted and the order is missing,\n        the customer should contact support with the transaction reference.\n        Never ask customers to share their OTP, PIN or full card details.\n        "
+    },
+    {
+        "category": "Order Tracking",
+        "content": "\n        Customers can track their orders by logging into their account\n        and opening the My Orders section.\n        The tracking page displays the current shipment status.\n        If tracking information has not updated, allow some time for\n        the courier partner to update the shipment details.\n        "
+    },
+    {
+        "category": "Refund Policy",
+        "content": "\n        Refunds are initiated after the returned product is inspected\n        and the return request is approved.\n        The refund is processed to the original payment method.\n        The time taken for the refund to appear depends on the\n        payment provider and bank.\n        Customers can contact support if the refund is delayed.\n        "
+    },
+    {
+        "category": "Account Problems",
+        "content": "\n        If customers cannot log into their account, they should check\n        their registered email address and password.\n        They can use the Forgot Password option to reset their password.\n        Customers should never share their password or OTP with anyone.\n        "
+    },
+    {
+        "category": "Product Returns",
+        "content": "\n        Customers can request a product return through the My Orders\n        section if the product is eligible under the return policy.\n        They should select the relevant order and submit a return request.\n        Products may need to meet the applicable return conditions.\n        "
+    }
+]
