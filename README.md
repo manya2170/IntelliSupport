@@ -1,6 +1,8 @@
 
 # IntelliSupport – AI-Powered Customer Support Assistant
 
+Live Demo: https://intellisupport-6bgeuccamdpwlagc6muegx.streamlit.app/
+
 IntelliSupport is an AI-powered customer support application that uses Large Language Models (LLMs) and Retrieval-Augmented Generation (RAG) to answer customer queries and manage support tickets.
 
 ## Features
@@ -11,8 +13,8 @@ IntelliSupport is an AI-powered customer support application that uses Large Lan
 - Support ticket creation and retrieval.
 - PostgreSQL database integration using Supabase.
 - REST API built with FastAPI.
-- Streamlit frontend (upcoming).
-
+- Streamlit frontend deployed on Streamlit Community Cloud.
+  
 ## Tech Stack
 
 - Python
@@ -59,7 +61,7 @@ IntelliSupport/
 
 ## **Project Status**
 
-Backend development and initial API testing completed. Streamlit frontend and public deployment are planned next.
+Successfully developed and deployed. The Streamlit frontend is live, the FastAPI backend is integrated, and the application is publicly accessible. Core features include AI-powered support, RAG-based responses, and Supabase ticket management.
 
 ## **Note**
 
