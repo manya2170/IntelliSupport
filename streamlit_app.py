@@ -195,18 +195,14 @@ with st.sidebar:
     st.caption(f"Health check HTTP status: {health.status_code}")
 
     if health.status_code == 200:
-        st.markdown(
-            '<span class="status">● Backend Online</span>',
-            unsafe_allow_html=True
-        )
+        st.success("Backend Online")
     else:
         st.error(f"Backend returned: {health.status_code}")
         st.code(health.text[:500])
 
-except requests.RequestException as error:
-    st.error("Backend connection failed")
-    st.code(f"{type(error).__name__}: {error}")
-
+    except requests.RequestException as error:
+        st.error("Backend connection failed")
+        st.code(f"{type(error).__name__}: {error}")
     st.markdown("---")
 
     if st.button("＋ New Conversation", use_container_width=True):
