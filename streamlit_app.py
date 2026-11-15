@@ -186,7 +186,7 @@ with st.sidebar:
 
     st.markdown("### System Status")
 
-    try:
+   try:
         health = requests.get(
             f"{BACKEND_URL}/health",
             timeout=15
