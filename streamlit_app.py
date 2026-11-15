@@ -187,19 +187,25 @@ with st.sidebar:
     st.markdown("### System Status")
 
     try:
-        health = requests.get(
-            f"{BACKEND_URL}/health",
-            timeout=8
+    health = requests.get(
+        f"{BACKEND_URL}/health",
+        timeout=15
+    )
+
+    st.caption(f"Health check HTTP status: {health.status_code}")
+
+    if health.status_code == 200:
+        st.markdown(
+            '<span class="status">● Backend Online</span>',
+            unsafe_allow_html=True
         )
-        if health.ok:
-            st.markdown(
-                '<span class="status">● Backend Online</span>',
-                unsafe_allow_html=True
-            )
-        else:
-            st.warning("Backend unavailable")
-    except requests.RequestException:
-        st.error("Backend connection failed")
+    else:
+        st.error(f"Backend returned: {health.status_code}")
+        st.code(health.text[:500])
+
+except requests.RequestException as error:
+    st.error("Backend connection failed")
+    st.code(f"{type(error).__name__}: {error}")
 
     st.markdown("---")
 
